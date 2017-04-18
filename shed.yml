@@ -1,1 +1,5 @@
-domain: .krig.io
+domain: krig.io
+
+#branches:
+#  master:
+#    domain: krig.io

@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"html"
-	"log"
 	"net/http"
 )
 
@@ -16,5 +15,6 @@ func main() {
 		fmt.Fprintf(w, "Hi")
 	})
 
-	log.Fatal(http.ListenAndServe(":8899", nil))
+	fmt.Println("Listening on http://localhost:80")
+	http.ListenAndServe(":80", nil)
 }

@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  web:
+    image: golang:1.8
+    working_dir: /go/src/app
+    volumes:
+      - .:/go/src/app
+    ports:
+      - 8899:8899
+    restart: always
+    container_name: ${SHED_DOMAIN}

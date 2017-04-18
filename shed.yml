@@ -1,5 +1,10 @@
+docker:
+  endpoint: unix:///var/run/docker.sock
+
 domain: krig.io
 
 #branches:
 #  master:
+#    docker:
+#      endpoint: unix:///var/run/docker.sock
 #    domain: krig.io
